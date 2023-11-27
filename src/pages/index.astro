@@ -20,49 +20,49 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: 'Get started',
         href: 'https://github.com/cofundable/cofundable',
         target: '_blank',
-        icon: 'tabler:download',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Learn more', href: '#how-it-works' },
     ]}
   >
     <Fragment slot="title">Making it easier to do good</Fragment>
 
     <Fragment slot="subtitle">
-      Cofundable is a platform that helps people find and adopt the tools they need to organize around a common cause.
-      Let's build your community together.
+      Cofundable is a platform that helps people find and connect the tools they need to organize around a common cause.
+      Let's build something together.
     </Fragment>
   </Hero>
 
   <!-- Steps Widget ****************** -->
 
   <Steps
+    id="how-it-works"
     tagline="How it works"
     title="You focus on the mission, we'll take care of the rest."
     subtitle="Discover how Cofundable makes it easier for groups to collaborate, raise money, and prioritize how that money is spent."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Describe your cause</span>',
+        title: 'Step 1: <span class="font-medium">Create a profile</span>',
         description:
           "Pick one of our templates that reflects the kind of community you're building or start from scratch. After you answer a few questions about your cause, you can begin inviting people to work with you.",
         icon: 'tabler:pencil',
       },
       {
-        title: 'Step 2: <span class="font-medium">Connect the tools you need</em>',
+        title: 'Step 2: <span class="font-medium">Connect your tools</em>',
         description:
           'Connect your existing collaboration tools or get recommendations for new ones. Once your tools are linked to your account, you can share data between them and manage activity from a single dashboard.',
         icon: 'tabler:tool',
       },
       {
-        title: 'Step 3: <span class="font-medium">Engage your community</span>',
+        title: 'Step 3: <span class="font-medium">Engage the community</span>',
         description:
           'Stay connected with your community as it grows. Answer questions like "Who\'s been active in Slack but hasn\'t been to an event recently?" and "Which channels have people been most excited to join?"',
         icon: 'tabler:users',
       },
       {
-        title: 'Step 4: <span class="font-medium">Raise and spend money together</span>',
+        title: 'Step 4: <span class="font-medium">Fund your cause</span>',
         description:
           'If your cause needs funding, use a group account to accept donations, apply for grants, or collect fees. Then invite members of your community to prioritize how that money is spent.',
         icon: 'tabler:heart-dollar',
@@ -74,27 +74,29 @@ const metadata = {
     }}
   />
 
-  <!-- Content Widget **************** -->
+  <!-- Open source project use case section **************** -->
 
   <Content
+    id="open-source"
     isReversed
-    tagline="Inside template"
-    title="Cofundable's Blueprint: Fun Meets Functionality!"
+    tagline="Who it's built for"
+    title="One platform,<br>countless possibilities"
+    subtitle="While no two communities are exactly alike, we've tailored Cofundable's features to fit a few common use cases for collective action."
     items={[
       {
-        title: 'Project and issue templates',
+        title: 'Configure common tools and templates',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Connect the product roadmap to your community forum and let users report bugs or request features from Slack or Discord.',
       },
       {
-        title: 'Community forums and listservs',
+        title: 'Convert stargazers into sponsors',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Discover contributors who have submitted PRs but not starred your project, and nudge users who request features to consider donating.',
       },
       {
-        title: 'Sponsorships and donations',
+        title: 'Let the community drive your roadmap',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Invite users who depend on your software to help prioritize functionality by creating crowdfunded bug and feature bounties.',
       },
     ]}
     image={{
@@ -103,7 +105,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Open source groups</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Open source projects</h3>
        Starting a new software project and want it to be public? We can help you build an open source community around
       your code.
     </Fragment>
@@ -113,29 +115,26 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
+  <!-- Community initiatives use case section **************** -->
 
   <Content
+    id="community-initiative"
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Stay connected between meetings',
+        description:
+          'Keep your momentum going on projects with a community forum, document management, or a group list serv.',
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Collect dues and manage expenses',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Raise and distribute money for group projects without having to worry about compliance or tax issues.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Prioritize the projects you take on',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Let community members vote on whether to spend the budget on building a community garden or painting a local mural.',
       },
     ]}
     image={{
@@ -154,30 +153,27 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
+  <!-- Nonprofit use case community Widget **************** -->
 
   <Content
+    id="nonprofit"
     isReversed
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Get the word out about your program',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'Create a website that describes your work and stay connected with current and former program participants in a community forum.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Raise money to pay for what you need',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Manage donations, grants, and expenses in a single place with the legal and financial support of a fiscal sponsor.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Get input on the services you offer',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with Cofundable.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing Cofundable community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+          'Ask the community you serve to help you prioritize certain types of programming and then share their priorities with funders.',
       },
     ]}
     image={{
@@ -185,7 +181,49 @@ const metadata = {
       alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Early stage nonprofits</h3>
+       Running a program that you want to grow into an organization? We can connect you to the resources you need to
+      scale your impact.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-light dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Local grant-makers use case community Widget **************** -->
+
+  <Content
+    id="grant-makers"
+    isAfterContent
+    items={[
+      {
+        title: 'Connect with local stakeholders',
+        description:
+          'Open communication channels with prospective applicants and community leaders to understand their needs and priorities.',
+      },
+      {
+        title: 'Extend grants with outside donations',
+        description:
+          'Raise more money for the initiatives you support by creating funding opportunities that are open to public contributions.',
+      },
+      {
+        title: 'Let the community drive the grant process',
+        description:
+          'Invite local stakeholders to decide how money is awarded to organizations working in their community.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Astronauts Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Local grant-makers</h3>
+       Community foundations, giving circles, and more. We can help you move philanthropy out of the boardroom and into
+      the community.
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-light dark:bg-transparent"></div>
@@ -255,7 +293,7 @@ const metadata = {
       {
         title: 'What do I need to start?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          "Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it's actually our duty to future generations.",
       },
       {
         title: 'How to install the Astro + Tailwind CSS template?',
