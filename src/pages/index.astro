@@ -3,9 +3,9 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
   title: 'Cofundable — Connecting people to the tools and resources they need to organize around a common cause',
@@ -30,8 +30,10 @@ const metadata = {
     <Fragment slot="title">Making it easier to do good</Fragment>
 
     <Fragment slot="subtitle">
-      Cofundable is a platform that helps people find and connect the tools they need to organize around a common cause.
-      Let's build something together.
+      Cofundable is an online marketplace and integration platform that helps people find and connect the tools they
+      need to organize around a common cause.
+      <br />
+      <span class="font-semibold hidden md:block mt-3">Let's build something together.</span>
     </Fragment>
   </Hero>
 
@@ -230,90 +232,113 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Features Widget *************** -->
+  <!-- Features2 Widget ************** -->
 
-  <Features
+  <Features2
     id="features"
     tagline="Features"
     title="What you get with Cofundable"
+    subtitle="Discover our selection below to streamline and elevate your projects."
+    columns={3}
+    items={[
+      {
+        title: 'Educational',
+        description:
+          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Interior Design',
+        description:
+          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
+        icon: 'tabler:home-star',
+      },
+      {
+        title: 'Photography',
+        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
+        icon: 'tabler:photo',
+      },
+      {
+        title: 'E-commerce',
+        description:
+          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
+        icon: 'tabler:shopping-cart',
+      },
+      {
+        title: 'Blog',
+        description:
+          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
+        icon: 'tabler:article',
+      },
+      {
+        title: 'Business',
+        description:
+          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
+        icon: 'tabler:building-store',
+      },
+      {
+        title: 'Branding',
+        description:
+          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
+        icon: 'tabler:arrow-big-up-lines',
+      },
+      {
+        title: 'Medical',
+        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
+        icon: 'tabler:vaccine',
+      },
+      {
+        title: 'Fashion Design',
+        description:
+          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
+        icon: 'tabler:tie',
+      },
+    ]}
+  />
+
+  <!-- Why cofundable section *************** -->
+
+  <Features
+    id="why-cofundable"
+    tagline="Why Cofundable"
+    title="What makes us different"
     subtitle="You bring the people, we'll take care of the rest. Discover how Cofundable helps you focus on growing your community instead of figuring out how to manage it."
     items={[
       {
-        title: 'Simple website builder',
+        title: 'Fully open source',
         description:
           'A vibrant online community often starts with a website. Our simple website builder makes it easier to establish a digital presence for your cause.',
         icon: 'tabler:code',
       },
       {
-        title: 'Tool discovery and management',
+        title: 'Driven by your priorities',
+        description:
+          'A vibrant online community often starts with a website. Our simple website builder makes it easier to establish a digital presence for your cause.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Works with the tools you love',
         description:
           "Don't spend hours looking for the tools you need. We'll help you find and set up the essentials like chat and document sharing in just a few clicks.",
         icon: 'tabler:tool',
       },
       {
-        title: 'Branding guide and resources',
+        title: 'Designed to be extended',
         description:
           "Find your community's visual identity. We'll help you choose the building blocks of a branding guide, including fonts, colors, and a logo.",
         icon: 'tabler:palette',
       },
       {
-        title: 'Legal and financial support',
-        description:
-          'Managing money and compliance is important to do, but hard to do well. Let us handle details like taxes and reporting so that you can focus on the mission.',
-        icon: 'tabler:report-money',
-      },
-      {
-        title: 'Community building checklist',
+        title: 'Made for small teams',
         description:
           "There are a lot of steps involved in organizing a community. Our interactive checklist helps you track of what's most important.",
         icon: 'tabler:list-check',
       },
       {
-        title: 'And so much more...',
+        title: 'Backed by the community',
         description:
-          'Automated workflows, software discounts, and access to design and technical expertise. Our primary job is to make yours a little easier.',
-        icon: 'tabler:seeding',
-      },
-    ]}
-  />
-
-  <!-- FAQs Widget ******************* -->
-
-  <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that Cofundable offers and how it can elevate your web development journey."
-    tagline="FAQs"
-    classes={{ container: 'max-w-6xl' }}
-    items={[
-      {
-        title: 'Why Cofundable?',
-        description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
-      },
-      {
-        title: 'What do I need to start?',
-        description:
-          "Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it's actually our duty to future generations.",
-      },
-      {
-        title: 'How to install the Astro + Tailwind CSS template?',
-        description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
-      },
-      {
-        title: "What's something that you don't understand?",
-        description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'Managing money and compliance is important to do, but hard to do well. Let us handle details like taxes and reporting so that you can focus on the mission.',
+        icon: 'tabler:report-money',
       },
     ]}
   />
