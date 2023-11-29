@@ -3,9 +3,9 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
   title: 'Cofundable — Connecting people to the tools and resources they need to organize around a common cause',
@@ -30,8 +30,10 @@ const metadata = {
     <Fragment slot="title">Making it easier to do good</Fragment>
 
     <Fragment slot="subtitle">
-      Cofundable is a platform that helps people find and connect the tools they need to organize around a common cause.
-      Let's build something together.
+      Cofundable is an online marketplace and integration platform that helps people find and connect the tools they
+      need to organize around a common cause.
+      <br />
+      <span class="font-semibold hidden md:block mt-3">Let's build something together.</span>
     </Fragment>
   </Hero>
 
@@ -41,12 +43,12 @@ const metadata = {
     id="how-it-works"
     tagline="How it works"
     title="You focus on the mission, we'll take care of the rest."
-    subtitle="Discover how Cofundable makes it easier for groups to collaborate, raise money, and prioritize how that money is spent."
+    subtitle="Discover how Cofundable makes it easier for groups to collaborate, raise money, and prioritize their spending."
     items={[
       {
         title: 'Step 1: <span class="font-medium">Create a profile</span>',
         description:
-          "Pick one of our templates that reflects the kind of community you're building or start from scratch. After you answer a few questions about your cause, you can begin inviting people to work with you.",
+          "Pick one of our templates that reflects the kind of community you're building or start from scratch. After you answer a few questions about your group's cause, you can begin inviting people to work with you.",
         icon: 'tabler:pencil',
       },
       {
@@ -56,21 +58,20 @@ const metadata = {
         icon: 'tabler:tool',
       },
       {
-        title: 'Step 3: <span class="font-medium">Engage the community</span>',
-        description:
-          'Stay connected with your community as it grows. Answer questions like "Who\'s been active in Slack but hasn\'t been to an event recently?" and "Which channels have people been most excited to join?"',
+        title: 'Step 3: <span class="font-medium">Engage your community</span>',
+        description: `Stay connected with your community as it grows. Answer questions like "Who's been active in Slack but hasn't been to an event recently?" and "Which channels have had the most activity overall?"`,
         icon: 'tabler:users',
       },
       {
         title: 'Step 4: <span class="font-medium">Fund your cause</span>',
         description:
-          'If your cause needs funding, use a group account to accept donations, apply for grants, or collect fees. Then invite members of your community to prioritize how that money is spent.',
+          'When you need to pay for things, use a group account to accept donations, apply for grants, or collect dues. Then invite members of your community to collectively decide how that money should be spent.',
         icon: 'tabler:heart-dollar',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: '~/assets/images/markus-spiske-sFydXGrt5OA-unsplash.jpg',
+      alt: 'Image of a watering can',
     }}
   />
 
@@ -91,7 +92,7 @@ const metadata = {
       {
         title: 'Convert stargazers into sponsors',
         description:
-          'Discover contributors who have submitted PRs but not starred your project, and nudge users who request features to consider donating.',
+          'Discover contributors who have submitted PRs but not starred your project, or nudge users who request features to consider donating.',
       },
       {
         title: 'Let the community drive your roadmap',
@@ -138,8 +139,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      src: '~/assets/images/kenny-eliason-qo6_mo9dsYg-unsplash.jpg',
+      alt: 'Image of community members planting a tree',
     }}
   >
     <Fragment slot="content">
@@ -177,13 +178,13 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: '~/assets/images/joel-muniz-3k3l2brxmwQ-unsplash.jpg',
+      alt: 'Image of people volunteering at a food pantry',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Early stage nonprofits</h3>
-       Running a program that you want to grow into an organization? We can connect you to the resources you need to
+       Running a program that you want to grow into an organization? We'll connect you to the resources you need to
       scale your impact.
     </Fragment>
 
@@ -195,13 +196,13 @@ const metadata = {
   <!-- Local grant-makers use case community Widget **************** -->
 
   <Content
-    id="grant-makers"
+    id="philanthropy"
     isAfterContent
     items={[
       {
         title: 'Connect with local stakeholders',
         description:
-          'Open communication channels with prospective applicants and community leaders to understand their needs and priorities.',
+          'Facilitate open conversations between prospective applicants and community leaders to better understand their needs.',
       },
       {
         title: 'Extend grants with outside donations',
@@ -209,20 +210,20 @@ const metadata = {
           'Raise more money for the initiatives you support by creating funding opportunities that are open to public contributions.',
       },
       {
-        title: 'Let the community drive the grant process',
+        title: 'Let the community define funding priorities',
         description:
           'Invite local stakeholders to decide how money is awarded to organizations working in their community.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: 'src/assets/images/romain-dancre-doplSDELX7E-unsplash.jpg',
+      alt: 'Image of people working on paperwork',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Local grant-makers</h3>
-       Community foundations, giving circles, and more. We can help you move philanthropy out of the boardroom and into
-      the community.
+       Manage a community foundation or contribute to a giving circle? We can help you move the funding process out of
+      the boardroom and into the neighborhood.
     </Fragment>
 
     <Fragment slot="bg">
@@ -230,90 +231,112 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Features Widget *************** -->
+  <!-- Features2 Widget ************** -->
 
-  <Features
+  <Features2
     id="features"
     tagline="Features"
     title="What you get with Cofundable"
-    subtitle="You bring the people, we'll take care of the rest. Discover how Cofundable helps you focus on growing your community instead of figuring out how to manage it."
+    subtitle="Learn more about the features and functionality our platform has to offer."
+    columns={3}
     items={[
       {
-        title: 'Simple website builder',
+        title: 'Branding guides and templates',
         description:
-          'A vibrant online community often starts with a website. Our simple website builder makes it easier to establish a digital presence for your cause.',
-        icon: 'tabler:code',
+          'A website and social media account are often the front door to a digital community. Use our branding guide and templates to make them reflect the visual identity of your cause.',
+        icon: 'tabler:color-swatch',
       },
       {
-        title: 'Tool discovery and management',
-        description:
-          "Don't spend hours looking for the tools you need. We'll help you find and set up the essentials like chat and document sharing in just a few clicks.",
+        title: 'Tool discovery and setup',
+        description: `Don't spend hours searching for digital tools like chat or forms. Our tool library lets you compare options, provides recommendations, and helps you set up the essentials in just a few clicks.`,
         icon: 'tabler:tool',
       },
       {
-        title: 'Branding guide and resources',
+        title: 'Automated data workflows',
         description:
-          "Find your community's visual identity. We'll help you choose the building blocks of a branding guide, including fonts, colors, and a logo.",
-        icon: 'tabler:palette',
+          'Want to add donors to your mailing list? After your tools are connected, pick from dozens of common workflow templates to help you share data between platforms.',
+        icon: 'tabler:route-2',
+      },
+      {
+        title: 'Community analytics',
+        description:
+          'Understand how people are connecting with each other across your communication channels. See user and activity data from all of your connected tools in a single dashboard.',
+        icon: 'tabler:device-analytics',
+      },
+      {
+        title: 'Revenue and expense management',
+        description: `Need to pay for a community-related expense? Cofundable is built on top of <a href="https://opencollective.com/" target="_blank" class="underline hover:no-underline text-secondary font-medium">Open Collective</a>, a legal and financial toolkit that makes it easier to raise and spend money as a group.`,
+        icon: 'tabler:folder-dollar',
       },
       {
         title: 'Legal and financial support',
         description:
-          'Managing money and compliance is important to do, but hard to do well. Let us handle details like taxes and reporting so that you can focus on the mission.',
+          "Managing compliance is important to do, but hard to do well. We'll connect you to a fiscal host who can take care of details like taxes and reporting so that you can focus on the mission.",
         icon: 'tabler:report-money',
       },
       {
-        title: 'Community building checklist',
+        title: 'Access to talent and expertise',
         description:
-          "There are a lot of steps involved in organizing a community. Our interactive checklist helps you track of what's most important.",
-        icon: 'tabler:list-check',
+          "Need help on something you can't to do in-house? Swap skills with other communities or search our marketplace for professional services like design and technical support.",
+        icon: 'tabler:bulb',
       },
       {
-        title: 'And so much more...',
+        title: 'Discounts and cost sharing',
         description:
-          'Automated workflows, software discounts, and access to design and technical expertise. Our primary job is to make yours a little easier.',
-        icon: 'tabler:seeding',
+          "Money can be tight when you're just getting started. Cofundable let's you split the cost of shared services with other communities and get group discounts on bulk purchases.",
+        icon: 'tabler:discount-2',
+      },
+      {
+        title: 'Collective decision making',
+        description: `Effective collaboration depends on having a clear process for group decisions. Our platform offers a set of built-in tools to help communities balance input and efficiency in decision making.`,
+        icon: 'tabler:heart-handshake',
       },
     ]}
   />
 
-  <!-- FAQs Widget ******************* -->
+  <!-- Why cofundable section *************** -->
 
-  <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that Cofundable offers and how it can elevate your web development journey."
-    tagline="FAQs"
-    classes={{ container: 'max-w-6xl' }}
+  <Features
+    id="why-cofundable"
+    tagline="Why Cofundable"
+    title="Community done differently"
+    subtitle="There are a ton of platforms that can help you connect with stakeholders and raise money. What makes Cofundable unique?"
     items={[
       {
-        title: 'Why Cofundable?',
+        title: 'Fully open source',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'Our codebase is completely open source, which means you can inspect it, modify and host it yourself, and submit your own features or bug fixes.',
+        icon: 'tabler:code',
       },
       {
-        title: 'What do I need to start?',
+        title: 'Community-driven roadmap',
         description:
-          "Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it's actually our duty to future generations.",
+          'Our product roadmap is also public and we use crowdfunded bug and feature bounties to prioritize the functionality that gets added to it.',
+        icon: 'tabler:speakerphone',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Works with the tools you love',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Cofundable is designed to connect your tools, not replace them. Link your existing accounts and import activity data instead of starting from scratch.',
+        icon: 'tabler:tool',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'Designed to be extended',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "If you can't find an integration you need in our tool library, you can either build one yourself or start a campaign to fund a community-built plugin.",
+        icon: 'tabler:plug',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'Built to scale with your team',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'Our platform supports both small communities and large networks, with pricing plans that let you start with the basics then add features as you grow.',
+        icon: 'tabler:trending-up',
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'Portable by default',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'Cofundable makes it easy to move data between the tools you link to your account, and all of your activity data can be exported with the click of a button.',
+        icon: 'tabler:database-export',
       },
     ]}
   />

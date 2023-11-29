@@ -1,18 +1,35 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
-      text: 'Contact us',
-      href: getPermalink('/contact'),
+      text: 'How it works',
+      href: getPermalink('#how-it-works'),
     },
     {
-      text: 'About us',
-      href: getPermalink('/about'),
+      text: 'Solutions',
+      links: [
+        {
+          text: 'Open source projects',
+          href: getPermalink('#open-source'),
+        },
+        {
+          text: 'Community initiatives',
+          href: getPermalink('#community-initiative'),
+        },
+        {
+          text: 'Nonprofits',
+          href: getPermalink('#nonprofit'),
+        },
+        {
+          text: 'Local philanthropy',
+          href: getPermalink('#philanthropy'),
+        },
+      ],
     },
     {
-      text: 'Blog',
-      href: getBlogPermalink(),
+      text: 'Features',
+      href: getPermalink('#features'),
     },
   ],
   actions: [{ text: 'Follow us', href: 'https://github.com/cofundable/cofundable', target: '_blank' }],
