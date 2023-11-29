@@ -59,20 +59,19 @@ const metadata = {
       },
       {
         title: 'Step 3: <span class="font-medium">Engage your community</span>',
-        description:
-          'Stay connected with your community as it grows. Answer questions like "Who\'s been active in Slack but hasn\'t been to an event recently?" and "Which channels have people been most excited to join?"',
+        description: `Stay connected with your community as it grows. Answer questions like "Who's been active in Slack but hasn't been to an event recently?" and "Which channels have had the most activity overall?"`,
         icon: 'tabler:users',
       },
       {
         title: 'Step 4: <span class="font-medium">Fund your cause</span>',
         description:
-          'When you need to pay for things, use a group account to accept donations, apply for grants, or collect dues. Then invite members of your community to collectively decide how that money is spent.',
+          'When you need to pay for things, use a group account to accept donations, apply for grants, or collect dues. Then invite members of your community to collectively decide how that money should be spent.',
         icon: 'tabler:heart-dollar',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: '~/assets/images/markus-spiske-sFydXGrt5OA-unsplash.jpg',
+      alt: 'Image of a watering can',
     }}
   />
 
@@ -93,7 +92,7 @@ const metadata = {
       {
         title: 'Convert stargazers into sponsors',
         description:
-          'Discover contributors who have submitted PRs but not starred your project, and nudge users who request features to consider donating.',
+          'Discover contributors who have submitted PRs but not starred your project, or nudge users who request features to consider donating.',
       },
       {
         title: 'Let the community drive your roadmap',
@@ -140,8 +139,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      src: '~/assets/images/kenny-eliason-qo6_mo9dsYg-unsplash.jpg',
+      alt: 'Image of community members planting a tree',
     }}
   >
     <Fragment slot="content">
@@ -179,13 +178,13 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: '~/assets/images/joel-muniz-3k3l2brxmwQ-unsplash.jpg',
+      alt: 'Image of people volunteering at a food pantry',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Early stage nonprofits</h3>
-       Running a program that you want to grow into an organization? We can connect you to the resources you need to
+       Running a program that you want to grow into an organization? We'll connect you to the resources you need to
       scale your impact.
     </Fragment>
 
@@ -197,13 +196,13 @@ const metadata = {
   <!-- Local grant-makers use case community Widget **************** -->
 
   <Content
-    id="grant-makers"
+    id="philanthropy"
     isAfterContent
     items={[
       {
         title: 'Connect with local stakeholders',
         description:
-          'Open communication channels with prospective applicants and community leaders to understand their needs and priorities.',
+          'Facilitate open conversations between prospective applicants and community leaders to better understand their needs.',
       },
       {
         title: 'Extend grants with outside donations',
@@ -217,14 +216,14 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: 'src/assets/images/romain-dancre-doplSDELX7E-unsplash.jpg',
+      alt: 'Image of people working on paperwork',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Local grant-makers</h3>
-       Community foundations, giving circles, and more. We can help you move philanthropy out of the boardroom and into
-      the community.
+       Manage a community foundation or contribute to a giving circle? We can help you move the funding process out of
+      the boardroom and into the neighborhood.
     </Fragment>
 
     <Fragment slot="bg">
@@ -238,59 +237,59 @@ const metadata = {
     id="features"
     tagline="Features"
     title="What you get with Cofundable"
-    subtitle="Discover our selection below to streamline and elevate your projects."
+    subtitle="Learn more about the features and functionality our platform has to offer."
     columns={3}
     items={[
       {
-        title: 'Website and branding',
+        title: 'Branding guides and templates',
         description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
-        icon: 'tabler:school',
+          'A website and social media account are often the front door to a digital community. Use our branding guide and templates to make them reflect the visual identity of your cause.',
+        icon: 'tabler:color-swatch',
       },
       {
         title: 'Tool discovery and setup',
-        description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
+        description: `Don't spend hours searching for digital tools like chat or forms. Our tool library lets you compare options, provides recommendations, and helps you set up the essentials in just a few clicks.`,
+        icon: 'tabler:tool',
       },
       {
-        title: 'Automated workflows',
+        title: 'Automated data workflows',
         description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
+          'Want to add donors to your mailing list? After your tools are connected, pick from dozens of common workflow templates to help you share data between platforms.',
+        icon: 'tabler:route-2',
       },
       {
         title: 'Community analytics',
         description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
+          'Understand how people are connecting with each other across your communication channels. See user and activity data from all of your connected tools in a single dashboard.',
+        icon: 'tabler:device-analytics',
+      },
+      {
+        title: 'Revenue and expense management',
+        description: `Need to pay for a community-related expense? Cofundable is built on top of <a href="https://opencollective.com/" target="_blank" class="underline hover:no-underline text-secondary font-medium">Open Collective</a>, a legal and financial toolkit that makes it easier to raise and spend money as a group.`,
+        icon: 'tabler:folder-dollar',
+      },
+      {
+        title: 'Legal and financial support',
+        description:
+          "Managing compliance is important to do, but hard to do well. We'll connect you to a fiscal host who can take care of details like taxes and reporting so that you can focus on the mission.",
+        icon: 'tabler:report-money',
       },
       {
         title: 'Access to talent and expertise',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
-      },
-      {
-        title: 'Cost-sharing and discounts',
         description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
+          "Need help on something you can't to do in-house? Swap skills with other communities or search our marketplace for professional services like design and technical support.",
+        icon: 'tabler:bulb',
       },
       {
-        title: 'Expense management',
+        title: 'Discounts and cost sharing',
         description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
+          "Money can be tight when you're just getting started. Cofundable let's you split the cost of shared services with other communities and get group discounts on bulk purchases.",
+        icon: 'tabler:discount-2',
       },
       {
-        title: 'Participatory budgeting',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Plugin ecosystem',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
+        title: 'Collective decision making',
+        description: `Effective collaboration depends on having a clear process for group decisions. Our platform offers a set of built-in tools to help communities balance input and efficiency in decision making.`,
+        icon: 'tabler:heart-handshake',
       },
     ]}
   />
@@ -300,8 +299,8 @@ const metadata = {
   <Features
     id="why-cofundable"
     tagline="Why Cofundable"
-    title="What makes us different"
-    subtitle="You bring the people, we'll take care of the rest. Discover how Cofundable helps you focus on growing your community instead of figuring out how to manage it."
+    title="Community done differently"
+    subtitle="There are a ton of platforms that can help you connect with stakeholders and raise money. What makes Cofundable unique?"
     items={[
       {
         title: 'Fully open source',
@@ -310,7 +309,7 @@ const metadata = {
         icon: 'tabler:code',
       },
       {
-        title: 'Driven by the community',
+        title: 'Community-driven roadmap',
         description:
           'Our product roadmap is also public and we use crowdfunded bug and feature bounties to prioritize the functionality that gets added to it.',
         icon: 'tabler:speakerphone',
