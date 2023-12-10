@@ -1,0 +1,7 @@
+---
+import Image from '~/components/common/Image.astro';
+import { SITE } from '~/utils/config';
+import appStoreImg from '~/assets/images/cofundable-logo-name.png';
+---
+
+<div class="py-2"><Image src={appStoreImg} alt={SITE?.name} layout="contained" width={150} /></div>

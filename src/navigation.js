@@ -1,4 +1,4 @@
-import { getPermalink, getAsset } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -40,35 +40,18 @@ export const footerData = {
     {
       title: 'Product',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'How it works', href: getPermalink('#how-it-works') },
+        { text: 'Features', href: getPermalink('#features') },
+        { text: 'Roadmap', href: 'https://github.com/orgs/cofundable/projects/1' },
+        { text: '' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Community',
       links: [
-        { text: 'Docs', href: '' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Open source', href: 'https://github.com/cofundable/cofundable' },
+        { text: 'Discussions', href: 'https://github.com/orgs/cofundable/discussions' },
+        { text: 'Report an issue', href: 'https://github.com/cofundable/cofundable/issues/new/choose' },
       ],
     },
   ],
@@ -77,10 +60,8 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://twitter.com/cofundableorg' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/cofundable/' },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/cofundable/cofundable' },
   ],
   footNote: 'Copyright Cofundable 2023',
