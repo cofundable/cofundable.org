@@ -43,7 +43,6 @@ export const footerData = {
         { text: 'How it works', href: getPermalink('#how-it-works') },
         { text: 'Features', href: getPermalink('#features') },
         { text: 'Roadmap', href: 'https://github.com/orgs/cofundable/projects/1' },
-        { text: '' },
       ],
     },
     {
