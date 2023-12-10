@@ -1,10 +1,10 @@
 site:
   name: Cofundable
-  site: 'https://cofundable.org'
+  site: 'https://www.cofundable.org'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: 5Kh-xGBeEIrJgcpPe54O26Fh9IpQypG22wTX-Yjon5o
 
 # Default SEO metadata
 metadata:
@@ -23,8 +23,8 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@cofundable-org'
-    site: '@cofundable-org'
+    handle: '@cofundableorg'
+    site: '@cofundableorg'
     cardType: summary_large_image
 
 i18n:
